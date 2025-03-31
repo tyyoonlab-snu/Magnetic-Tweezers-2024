@@ -1,8 +1,8 @@
-if 1
-    clear all
-    close all
-    clc
-end
+
+clear all
+close all
+clc
+
 %% Explain code
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Initiation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %[prior0, transmat0, mixmat0, mu0, sigma0] =  init_mhmm(data, Q, M,'full',0)
@@ -83,8 +83,8 @@ end
 
 % Every loading data must be synchronized! == all seqeunce must have same scaled factor (ex> nm,um etc) and same positions of final/initial line
 
-dpath = 'E:\a_single_candidates_with 3rd lot\HMM_test\B4202\nB4202'; % position of the trace file
-epath = 'E:\a_single_candidates_with 3rd lot\HMM_test\B4202\State position'; % position of the state position file
+dpath = ''; % position of the trace file
+epath = ''; % position of the state position file
 cd(dpath);
 
 dpmention = find(dpath == '\');
